@@ -1,2 +1,0 @@
-schedule==1.2.1
-plyer==2.1.0

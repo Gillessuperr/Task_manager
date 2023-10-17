@@ -1,8 +1,8 @@
-## Project description of the Task manager
-# What is it about?
+# Project description of the Task manager
+## What is it about?
 
-# What should the user do?
+## What should the user do?
 
-# How to use it?
+## How to use it?
 
-# What does the program do?
+## What does the program do?

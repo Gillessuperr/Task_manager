@@ -4,13 +4,13 @@ import io
 tasks = [] # global variable. It is a list of dictionaries.
 
     """
-    Reads tasks from a document and returns a task-list.
+    The next function reads tasks from a document and returns a task-list.
 
     Args:
-    document_content (str): The content of the document to read tasks from.
+    document_content (str): the content of the document to read tasks from.
 
     Returns:
-    list: A list of tasks.
+    list: a task-list.
     """
 def read_tasks_from_document(document_content):
     tasks = []
@@ -27,10 +27,10 @@ def read_tasks_from_document(document_content):
     Loads tasks from a document and returns a list of tasks.
 
     Args:
-    document_path (str): The path of the document to load tasks from.
+    document_path (str): the path of the document to load tasks from.
 
     Returns:
-    list: A list of tasks.
+    list: a task-list.
     """
 def load_tasks_from_document(document_path):
     try:
@@ -39,22 +39,22 @@ def load_tasks_from_document(document_path):
     except FileNotFoundError:
         return []
     """
-    Saves tasks to a document.
+    Saves tasks to a .txt file.
 
     Args:
-    tasks (list): A list of tasks to save.
-    document_path (str): The path of the document to save tasks to.
+    tasks (list): a task-list to save.
+    document_path (str): the path of the file.
     """
 def save_tasks_to_document(tasks, document_path):
     with io.open(document_path, 'w') as file: # opened to write.
         for task in tasks:
             file.write(f"{task['title']}: {task['description']}\n")
     """
-    Adds a task to the list of tasks.
+    Adds a task to the task-list.
 
     Args:
-    title (str): The title of the task.
-    description (str): The description of the task.
+    title (str): the title of the task.
+    description (str): the description of the task.
     """
 def add_task(title, description):
     task = {
@@ -75,7 +75,7 @@ def view_tasks():
     Marks a task as completed.
 
     Args:
-    task_index (int): The index of the task to mark as completed.
+    task_index (int): the index of the task to mark as completed.
     """
 def mark_completed(task_index):
     if 0 <= task_index < len(tasks): # if task_index is in the range of tasks. len(tasks) is the number of tasks.

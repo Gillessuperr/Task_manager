@@ -1,8 +1,13 @@
 # Project description of the Task manager
 ## What is it about?
+The Task manager is a simple program that helps you to manage your tasks. The special feature of the program is that it can save your tasks. The program can easily be expanded by adding new functions. The program is written in Python and is able to run on Python3.10. 
 
+I still used paper myself to write down my tasks. But I wanted to change that. Hence, my motivation of building this program with the i/o function which allows me to edit my tasks in an seperate file. Just like my paper task list. Furthermore, a lot of applications are available to manage your tasks. But they are full of unneccesary features, are not easy to use and do not bring me the same benefits of writing down my tasks on paper.
+
+The program does all it needs to do and more compared to writing down my tasks on paper. I manage my tasks by writing them up each day. The tasks I didn't finish that day are added on my task-list of the next day. The program does this automatically. I get a lot of satisfaction of marking my tasks as completed on paper and now I can also get this with this program. 
 ## What should the user do?
-
-## How to use it?
-
+Firstly, the user should run the program in the terminal. No requirements are needed. The user can either type the letter 1, 2, 3 or 4, dependent on what the users want to do with the program. 1 is for adding a task with description. 2 is to view unfinished tasks, including the tasks that are still unfinished from another session. 3 is to mark a task as completed and this deltes the task from the .txt file.It also returns the list of tasks. After typing 3, the program asks for an additional number because it needs to know which task to delete. 4 is to exit the program. 
 ## What does the program do?
+I define all the neccesary functions at the beginning of the program. After that, the print statements that the user sees when opening the program. Lastly, the underlying code that uses the functions to make the program work. The functions consist of the following: **read_tasks_from_document**, **load_tasks_from_document**, **save_tasks_to_document**, **add_task**, **view_tasks**, **mark_completed**, **load_initial_tasks**. **read_tasks_from_document** is implemented in **load_tasks_from_document** only. **save_tasks_from_document** is stated at the end of the add_task and **mark_completed** functions. **load_tasks_from_document** is used in **load_initial_tasks** function that gets runned before the start of the program.  
+
+The running code is just an if statement that checks the input of the user and runs specific functions. I have described the function structure above. The code makes an textfile on the computer of the user and the tasks are a dictionary file type and stores it that way in the file. The program makes a dictionary where the first key is the title of the task and and the second key is the description. Only behind the scenes everything is a dictionary because the dictionary is split and formatted nicely when presented to the user.

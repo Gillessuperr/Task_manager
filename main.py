@@ -3,7 +3,7 @@ import io
 
 tasks = [] # global variable. It is a list of dictionaries.
 
-    """
+"""
     The next function reads tasks from a document and returns a task-list.
 
     Args:
